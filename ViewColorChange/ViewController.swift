@@ -10,11 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var vblack: UIView!
+    @IBOutlet weak var vgreen: UIView!
+    @IBOutlet weak var vblue: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor=UIColor.lightGray
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    @IBAction func btnblack(_ sender: UIButton) {
+        vblack.isHidden = true
+    }
+    @IBAction func btngreen(_ sender: UIButton) {
+        vgreen.isHidden = true
+    }
+    @IBAction func btnblue(_ sender: UIButton) {
+        vblue.isHidden = true
+    }
+    
 }
 
